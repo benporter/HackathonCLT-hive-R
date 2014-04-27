@@ -15,3 +15,6 @@ General Flow:
  - Use R for additional munging and exploratory graph building
 
 
+After running the HQL trying to read it into R, we stumbled upon a strange delimiter, ^A or \001, and need to change it in order to properly read the data into R.  Here is the bash we ran to change the delimiter to a pipe and save the results in catsales_fmtd.dat.
+
+    cat catsales.dat | tr "\001" "|" > catsales_fmtd.dat
