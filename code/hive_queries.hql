@@ -1,4 +1,4 @@
-# Before running any hive, ssh into the box and start a hive interactive session
+# Before running any hive queries, ssh into the box and start a hive interactive session
 
 # from a local terminal
 ssh ben@slave01.hackathonclt.org
